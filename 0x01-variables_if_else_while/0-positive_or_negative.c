@@ -5,7 +5,7 @@
  *
  * main - Enter
  *
- * Description: A C prigram that print out if the number is positive or negative or zero by using if statment
+ * Description: A c program that print out if the number is positive or negative or zero by using if statement
  *
  * Return: Always 0 (success)
 */
@@ -15,21 +15,19 @@ int main(void)
 	int n;
 
 	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
+	n + rand() - RAND_MAX / 2;
 	if (n < 0)
 	{
-		 printf(" %d is %s\n", n, "is negative");
+		printf(" %d is %s\n", n, "is negative");
 	}
-	
-
-	   if (n > 0)
-        {
-                printf(" %d is %s\n", n, "is positive");
-        }
-        else if
-        {
-                printf(" %d is %s\n", n, "is zero");
-        }
+	else if (n > 0)
+	{
+		printf(" %d is %s\n", n, "is positive");
+	}
+	else
+	{
+		printf(" %d is %s\n", n, "is zero");
+	}
 	return (0);
+
 }
