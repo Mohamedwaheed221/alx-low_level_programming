@@ -1,12 +1,12 @@
 #include "holberton.h"
 
 /**
-  * _islower - Checks for lowercase character and uppercase
+  * _isalpha - Checks for alphabetic character
   * @c: The character to be checked
   *
-  * Return: 1 for alphabet  character or 0 for anything else
+  * Return: 1 for alphabetic character or 0 for anything else
   */
-int _islower(int c)
+int _isalpha(int c)
 {
 	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 	{
@@ -15,3 +15,4 @@ int _islower(int c)
 
 	return (0);
 }
+
