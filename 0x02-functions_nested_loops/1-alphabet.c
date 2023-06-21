@@ -6,13 +6,9 @@
  */
 void print_alphabet(void)
 {
-	char c;
+	char ch;
 
-	for (c = 'a'; c <= 'z'; c++)
-	{
-		_putchar(c);
-	}
-_putchar('\n');
-
-return (0);
+	for (ch = 'a'; ch <= 'z'; ch++)
+		_putchar(ch);
+	_putchar('\n');
 }
