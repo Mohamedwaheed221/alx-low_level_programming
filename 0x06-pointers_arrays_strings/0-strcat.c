@@ -6,7 +6,6 @@
  * @dest: destino de la cadena.
  * Return: dest.
  */
-
 char *_strcat(char *dest, char *src)
 {
 	int i;
@@ -18,14 +17,12 @@ char *_strcat(char *dest, char *src)
 		i++;
 	}
 	j = 0;
-
-	while (stc[j] != '\0')
+	while (src[j] != '\0')
 	{
-		dest[i] = stc[j];
+		dest[i] = src[j];
 		i++;
 		j++;
 	}
 	dest[i] = '\0';
 	return (dest);
-
 }
