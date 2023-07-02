@@ -3,14 +3,14 @@
  * mul - a function that multiplies two integers.
  * @a: integer.
  * @b: integer.
- * Return: sum of tow integer.
+ * Return: a * b.
  */
 
 
 int mul(int a, int b)
 {
-	int sum;
+	int multiply;
 
-	sum = a + b;
-	return (sum);
+	multiply  = a * b;
+	return (multiply);
 }
