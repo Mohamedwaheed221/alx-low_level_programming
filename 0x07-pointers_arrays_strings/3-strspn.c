@@ -13,16 +13,22 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int mn, op;
+	unsigned int bytes = 0;
+	int q;
 
-	for (mn == 0; s[mn] != '\0' mn++)
+	while (*s)
 	{
-		for (op = 0;  accept[op] != s[mn]; op++)
+		for (q = 0; accept[q]; q++)
 		{
-			if (accept[op] == '\0')
-				return (mn);
+			if (accept[q] == *s)
+			{
+				bytes++;
+				break;
+			}
+			else if ((accept[q + 1]) == '\0')
+				return (bytes);
 		}
+		s++;
 	}
-	return (mn);
-
+	return (bytes);
 }
