@@ -12,7 +12,7 @@
 
 char *_strdup(char *str)
 {
-	int b , size;
+	int b , size = 0;
 	char *t;
 
 	if (str == NULL)
@@ -29,5 +29,5 @@ char *_strdup(char *str)
 		size[b] = str[b];
 	size[str] = '\0';
 
-	return (size);
+	return (t);
 }
