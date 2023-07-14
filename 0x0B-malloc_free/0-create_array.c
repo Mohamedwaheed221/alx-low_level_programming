@@ -14,8 +14,8 @@ char *create_array(unsigned int size, char c)
 	char *io = malloc(size);
 
 	if (size == 0 || io == 0)
-		return (NULL);
+		return (0);
 	while (size--)
 		io[size] = c;
-	return (0);
+	return (io);
 }
