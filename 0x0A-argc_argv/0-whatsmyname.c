@@ -9,7 +9,7 @@
 
 void  main(int argc; char *argv[])
 {
-	printf("my loc is %s", argv[0]);
+	printf("%s\n", argv[0]);
 
 	return (0);
 }
