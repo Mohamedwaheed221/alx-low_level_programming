@@ -11,18 +11,17 @@
 
 int main(int argc, char *argv[])
 {
+	 int x, y;
+
 	if (argc < 3)
 	{
 		printf("%s\n", Error);
 		return (1);
 	}
 
-		int x, y, sum = 0;
-
 		x = atoi(argv[1]);
 		y = atio(argv[2]);
-		sum = x * y;
-		printf("%d\n", sum);
+		printf("%d\n", x * y);
 
 		return (0);
 }
