@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 
 		x = argv[1][0] - '0';
 		y = argv[2][0] - '0';
-		sum = x + y;
+		sum = x * y;
 		printf("%d\n", sum);
 	}
 	return (0);
