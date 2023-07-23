@@ -1,6 +1,6 @@
-#ifndef 1-pi.h
-#define 1-pi.h
+#ifndef -pi.h
+#define -pi.h
 
 #define PI 3.14159265359
 
-#endif /*1-pi.h*/
+#endif /*pi.h*/
