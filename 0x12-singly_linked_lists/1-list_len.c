@@ -1,21 +1,21 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 #include "lists.h"
 
 /**
- * list_len - Calculate the number of elements.
- * @h: Pointer to a list.
- * Return: Integer.
- **/
-
+ * list_len - check the code for Holberton School students.
+ * @h: name of the list
+ * Return: the number of nodes.
+ */
 size_t list_len(const list_t *h)
 {
-	const list_t *temp;
-	unsigned int counter = 0;
+	int count = 0;
 
-	temp = h;
-	while (temp)
+	while (h)
 	{
-		counter++;
-		temp = temp->next;
+		count++;
+		h = h->next;
 	}
-	return (counter);
+	return (count);
 }
